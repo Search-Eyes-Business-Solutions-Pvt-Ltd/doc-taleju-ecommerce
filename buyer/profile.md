@@ -1,0 +1,4 @@
+- user can signup as buyer.
+- user can check profile
+  - in profile if they are already registered as seller also, it should be mentioned
+  - if they are not registered as seller, they can find button to register as seller also
