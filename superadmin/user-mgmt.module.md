@@ -1,0 +1,5 @@
+- server side pagination and filtration of user list
+- multiple user selection and bulk enable/disable
+- multiple user selection and enable/disable them all as buyer
+- multiple user selection and enable/disable them all as seller
+- multiple user seletion and send mass email 
