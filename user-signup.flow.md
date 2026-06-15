@@ -4,7 +4,7 @@
 - customer
 - vendor
 
-# user mgmt rules
+# user mgmt rules with backend endpoints
 - superadmin only can register for superadmin and support staff role users, we call them portal users [future]
 - vendors/customer can register themselves and activate themselves
 - backend url for vendor registration: /api/vendor/register,
@@ -16,11 +16,12 @@
   - in case of status active, iscustomeractive will be true
 - a single user can be both seller and customer
 - super admin can enable or disable users, seller, customer
-- super admin can register seller as customer also and customer as seller also
-- seller can also activate as customer also by self
-- customer can also activate as seller also by self
+- super admin can register seller as customer also via `/api/auth/activate-customer-role` and customer as seller also via `/api/auth/activate-seller-role`
+- seller can also activate as customer also by self via `/api/auth/activate-customer-role`
+- customer can also activate as seller also by self via `/api/auth/activate-seller-role`
 
-# endpoints for user signup
+# fronend endpoints for user signup
+
 
 # Seller Signup Flow
 - Opens seller portal [adm-ecommerce.sebs.asia]
