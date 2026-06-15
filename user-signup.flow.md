@@ -16,8 +16,8 @@
   - in case of status active, iscustomeractive will be true
 - a single user can be both seller and customer
 - super admin can enable or disable users, seller, customer
-- super admin can register seller as customer also via `/api/auth/activate-customer-role` and customer as seller also via `/api/auth/activate-seller-role`
-- seller can also activate as customer also by self via `/api/auth/activate-customer-role`
+- super admin can register seller as customer also via `PUT /api/auth/super-admin/users/{userId}/buyer-role` and customer as seller also via `PUT /api/auth/super-admin/users/{userId}/seller-role`
+- seller can also activate as customer also by self via `/api/auth/activate-buyer-role`
 - customer can also activate as seller also by self via `/api/auth/activate-seller-role`
 
 # fronend endpoints for user signup
